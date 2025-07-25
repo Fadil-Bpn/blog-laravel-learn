@@ -24,6 +24,8 @@
             {{ $slot }}
         </div>
     </main>
+    
+
 
     <!-- Footer -->
     <footer class="bg-white shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased">
@@ -60,6 +62,7 @@
             <div id="tooltip-dribbble" role="tooltip" class="tooltip hidden">Follow us on Dribbble</div>
         </div>
     </footer>
+
 </body>
 
 </html>

@@ -8,11 +8,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Category extends Model
 {
-    
+
     use HasFactory;
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class);
 
     }
+    protected $guarded = [
+        'id'
+    ];
 }

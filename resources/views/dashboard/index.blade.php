@@ -39,30 +39,7 @@
                     <p class="text-gray-500">This is a display of your Dashboard</p>
                 </div>
 
-                <div class="mb-6 max-w-md">
-                    <label class="block text-gray-700 text-sm font-medium mb-2" for="search">Search</label>
-                    <div class="relative">
-                        <input type="text" id="search" placeholder="Search something..." x-model="searchQuery"
-                            autocomplete="off"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200 focus:outline-none" />
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-4.35-4.35M16.65 16.65A7.5 7.5 0 1117.5 10a7.5 7.5 0 01-0.85 6.65z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Optional display result -->
-                    <p class="text-sm text-gray-500 mt-2" x-show="searchQuery">Searching for: "<span
-                            x-text="searchQuery"></span>"</p>
-                </div>
 
-                <!-- KOSONGKAN BAGIAN INI -->
-                <div class="bg-white border border-dashed border-gray-300 rounded-lg p-10 text-center text-gray-400">
-                    <p class="text-lg">Tidak ada konten saat ini.</p>
-                    <p class="text-sm mt-2">Silakan tambahkan modul atau komponen yang diperlukan.</p>
-                </div>
 
             </main>
 

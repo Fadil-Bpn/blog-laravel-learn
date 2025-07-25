@@ -12,14 +12,14 @@
                         <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
 
                             <div>
-                                @if ($post->image)
-                                    <div style="max-height: 400px; overflow:hidden;">
-                                        <img src="{{ asset('storage/' . $post->image) }}"
-                                            alt="{{ $post->category->name }}">
+                                @if (Auth::check())
+                                    <div class="relative select-none" oncontextmenu="return false;">
+                                        <img src="{{ route('secure.image', basename($post->image)) }}"
+                                            alt="Gambar tidak bisa ditampilkan" class="pointer-events-none"
+                                            draggable="false" style="user-select: none; -webkit-user-drag: none;">
                                     </div>
                                 @else
-                                    <img src="{{ asset('storage/' . $post->category->image) }}"
-                                        alt="{{ $post->category->name }}">
+                                    <p class="text-red-500 italic">Silakan login untuk melihat gambar ini.</p>
                                 @endif
                                 <a href="/posts?author={{ $post->author->username }}" rel="author"
                                     class="text-xl font-bold text-gray-900 dark:text-black">{{ $post->author->name }}</a>
